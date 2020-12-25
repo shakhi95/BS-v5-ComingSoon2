@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/Yekan.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Yekan.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Yekan.woff2") format("woff2"),
+    url("../fonts/Yekan.woff") format("woff"),
+    url("../fonts/Yekan.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+body {
+  font-family: "Yekan" !important;
+  height: 100vh;
+  background-color: azure;
+}
+
+.container-fluid {
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.3) 0%,
+      rgba(22, 22, 22, 0.7) 75%,
+      #161616 100%
+    ),
+    url(../img/bg.jpg) center center/cover;
+}
+
+.scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
